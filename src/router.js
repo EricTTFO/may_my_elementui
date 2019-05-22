@@ -12,21 +12,21 @@ export default new Router({
       name: 'home',
       component: Home
     }, {
-      path: '/data',
+      path: 'data',
       name: 'data',
       component: () => import('./views/Data.vue'),
       children: [{
-          path: '/users',
+          path: 'users',
           name: 'users',
           component: () => import('./views/Users.vue')
         },
         {
-          path: '/bikes',
+          path: 'bikes',
           name: 'bikes',
           component: () => import('./views/Bikes.vue')
         },
         {
-          path: '/rider',
+          path: 'rider',
           name: 'rider',
           component: () => import('./views/Rider.vue')
         }
